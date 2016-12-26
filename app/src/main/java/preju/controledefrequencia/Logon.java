@@ -79,6 +79,8 @@ public class Logon extends Activity {
     //Autenticação e Criação de lista
     public void logar(final String login, final String senha) {
         exibeDialogProgress();
+
+
         Gson g = new GsonBuilder().registerTypeAdapter(UsuarioMatriculaBean.class, new UsuarioMatriculaBeanDec()).create();
         OkHttpClient defaultHttpClient = new OkHttpClient.Builder()
                 .addInterceptor(new BasicAuthInterceptor(login, senha))
