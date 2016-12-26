@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgContentTrasnparente"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <!-- LEFT TITLE PART -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_weight="3"
+        android:background="@drawable/screen_border"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_left_dia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv_left_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_left_total"
+            android:layout_alignParentStart="true"
+            android:text="@string/texto_left_total"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+    <!-- RIGHT TITLE PART -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/screen_border_direita"
+        android:paddingBottom="6dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="15dp"
+        android:id="@+id/relativolayout"
+        android:paddingTop="8dp">
+
+
+
+        <TextView
+            android:id="@+id/title_requests_count"
+            style="@style/TitleBadgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label_primeiro_periodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:text="@string/texto_primeiro_periodo"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/label_segundo_periodo" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/TitleBadgeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_entrada"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/label_primeiro_periodo" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/TitleBadgeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_saida"
+
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/label_primeiro_periodo" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TitleBadgeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_saida"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/tv_center_segundo_periodo_saida" />
+
+
+        android:layout_above="@+id/textView"
+        android:layout_toEndOf="@+id/title_requests_count"
+
+        <TextView
+            android:id="@+id/tv_center_segundo_periodo_saida"
+            style="@style/TitleBadgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2S"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="11dp" />
+
+        <TextView
+            android:id="@+id/tv_center_primeiro_periodo_saida"
+            style="@style/TitleBadgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E2"
+            android:layout_below="@+id/textView6"
+            android:layout_alignEnd="@+id/tv_center_segundo_periodo_saida" />
+
+        <TextView
+            android:id="@+id/tv_center_primeiro_periodo"
+            style="@style/TitleBadgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1E"
+            android:layout_below="@+id/textView8"
+            android:layout_alignStart="@+id/tv_center_segundo_periodo" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+
+            style="@style/TitleBadgeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_entrada"
+            android:layout_above="@+id/tv_center_segundo_periodo_saida"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tv_center_segundo_periodo"
+            style="@style/TitleBadgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2E"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/title_requests_count"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/label_segundo_periodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:text="@string/texto_segundo_periodo"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:layout_above="@+id/textView3" />
+
+    </RelativeLayout>
+</LinearLayout>

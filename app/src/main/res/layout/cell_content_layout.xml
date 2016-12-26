@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <!-- content header line -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_border_top"
+        android:paddingBottom="7dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp">
+
+         <!-- dia do mês -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/cabecalho_dia"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <!-- total horas no dia -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/total_horas"
+
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- MENU -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_icon" />
+
+    </RelativeLayout>
+
+    <!-- content body layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/screen_border_frequencia"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="9dp">
+
+        <!-- primeiro periodo -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/periodo_azul"
+            android:text="@string/texto_primeiro_periodo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- entrada  primeiro periodo label-->
+                <TextView
+                    android:id="@+id/tv_entrada"
+                    style="@style/EntradaTextPequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                    android:text="@string/texto_entrada" />
+
+                <!-- entrada  primeiro periodo valor-->
+                <TextView
+                    android:id="@+id/valor_primeiro_periodo_entrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_entrada"
+                    android:layout_below="@id/tv_entrada"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/texto_value_entrada_default"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- saida primeiro periodo label-->
+                <TextView
+                    android:id="@+id/tv_saida"
+                    style="@style/EntradaTextPequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/texto_saida" />
+
+                <!-- saida primeiro periodo value-->
+                <TextView
+                    android:id="@+id/valor_primeiro_periodo_saida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_saida"
+                    android:layout_below="@id/tv_saida"
+                    android:text="@string/texto_value_saida_default"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- arrow -->
+
+
+        </LinearLayout>
+
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="7dp"
+            android:src="@color/contentDividerLine" />
+
+        <!-- segundo periodo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/periodo_azul"
+            android:text="@string/texto_segundo_periodo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- entrada  primeiro periodo label-->
+                <TextView
+                    android:id="@+id/tv_entrada_segundo_periodo"
+                    style="@style/EntradaTextPequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/texto_entrada" />
+
+                <!-- entrada  primeiro periodo valor-->
+                <TextView
+                    android:id="@+id/valor_segundo_periodo_entrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_entrada_segundo_periodo"
+                    android:layout_below="@id/tv_entrada_segundo_periodo"
+                    android:text="@string/texto_value_entrada_default"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- saida primeiro periodo label-->
+                <TextView
+                    android:id="@+id/tv_saida_segundo_periodo"
+                    style="@style/EntradaTextPequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/texto_saida" />
+
+                <!-- saida primeiro periodo value-->
+                <TextView
+                    android:id="@+id/valor_segundo_periodo_saida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_saida_segundo_periodo"
+                    android:layout_below="@id/tv_saida_segundo_periodo"
+                    android:text="@string/texto_value_saida_default"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="7dp"
+            android:src="@color/contentDividerLine" />
+        <!-- terceiro periodo -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/periodo_azul"
+            android:text="@string/texto_terceiro_periodo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- entrada  primeiro periodo label-->
+                <TextView
+                    android:id="@+id/tv_entrada_terceiro_periodo"
+                    style="@style/EntradaTextPequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/texto_entrada" />
+
+                <!-- entrada  primeiro periodo valor-->
+                <TextView
+                    android:id="@+id/valor_terceiro_periodo_entrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_entrada_terceiro_periodo"
+                    android:layout_below="@id/tv_entrada_terceiro_periodo"
+                    android:text="@string/texto_value_entrada_default"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- saida primeiro periodo label-->
+                <TextView
+                    android:id="@+id/tv_saida_terceiro_periodo"
+                    style="@style/EntradaTextPequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/texto_saida" />
+
+                <!-- saida primeiro periodo value-->
+                <TextView
+                    android:id="@+id/valor_terceiro_periodo_saida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_saida_terceiro_periodo"
+                    android:layout_below="@id/tv_saida_terceiro_periodo"
+                    android:text="@string/texto_value_saida_default"
+                    android:textColor="@color/mainTextColor"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="7dp"
+            android:src="@color/contentDividerLine" />
+        <!-- quarto periodo -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/periodo_azul"
+            android:text="@string/texto_quarto_periodo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- entrada  primeiro periodo label-->
+                <TextView
+                    android:id="@+id/tv_entrada_quarto_periodo"
+                    style="@style/EntradaTextPequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/texto_entrada" />
+
+                <!-- entrada  primeiro periodo valor-->
+                <TextView
+                    android:id="@+id/valor_quarto_periodo_entrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_entrada_quarto_periodo"
+                    android:layout_below="@id/tv_entrada_quarto_periodo"
+                    android:text="@string/texto_value_entrada_default"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- saida primeiro periodo label-->
+                <TextView
+                    android:id="@+id/tv_saida_quarto_periodo"
+                    style="@style/EntradaTextPequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/texto_saida" />
+
+                <!-- saida primeiro periodo value-->
+                <TextView
+                    android:id="@+id/valor_quarto_periodo_saida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_saida_quarto_periodo"
+                    android:layout_below="@id/tv_saida_quarto_periodo"
+                    android:text="@string/texto_value_saida_default"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="7dp"
+            android:src="@color/contentDividerLine" />
+
+        <!-- quarto periodo -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/periodo_azul"
+            android:text="@string/texto_quinto_periodo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- entrada  primeiro periodo label-->
+                <TextView
+                    android:id="@+id/tv_entrada_quinto_periodo"
+                    style="@style/EntradaTextPequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/texto_entrada" />
+
+                <!-- entrada  primeiro periodo valor-->
+                <TextView
+                    android:id="@+id/valor_quinto_periodo_entrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_entrada_quinto_periodo"
+                    android:layout_below="@id/tv_entrada_quinto_periodo"
+                    android:text="@string/texto_value_entrada_default"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- saida primeiro periodo label-->
+                <TextView
+                    android:id="@+id/tv_saida_quinto_periodo"
+                    style="@style/EntradaTextPequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/texto_saida" />
+
+                <!-- saida primeiro periodo value-->
+                <TextView
+                    android:id="@+id/valor_quinto_periodo_saida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_saida_quinto_periodo"
+                    android:layout_below="@id/tv_saida_quinto_periodo"
+                    android:text="@string/texto_value_saida_default"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- observações button -->
+        <TextView
+            android:id="@+id/content_request_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+         android:padding="10dp"
+        android:text="@string/texto_observacoes"
+         android:textAlignment="center"
+         android:textColor="@color/mainTextColor"
+         android:textSize="20sp" />
+
+     <TextView
+         android:layout_width="match_parent"
+         android:id="@+id/tv_observacoes_value"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="4dp"
+         android:background="@drawable/radius"
+         android:text="@string/texto_observacao_value"
+         android:textAlignment="center"
+         android:textColor="@color/contentBadgeTitle"
+         android:textSize="12sp" />
+
+ </LinearLayout>
+
+</LinearLayout>

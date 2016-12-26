@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundlogin">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_login"
+        android:layout_alignStart="@+id/editText_login"
+        android:layout_marginBottom="4dp"
+        android:text="UserID"
+        android:textAllCaps="false"
+        android:textColor="@color/bgContent" />
+
+    <EditText
+        android:id="@+id/editText_login"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_senha"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_border_login"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/bgContent"
+        android:textColorHint="@color/bgContent" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_senha"
+        android:layout_alignStart="@+id/et_senha"
+        android:layout_marginBottom="4dp"
+        android:text="Senha"
+        android:textColor="@color/bgContent" />
+
+    <EditText
+        android:id="@+id/et_senha"
+        android:layout_width="283dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_login"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_border_login"
+        android:ems="10"
+
+        android:inputType="textPassword"
+        android:textColor="@color/bgContent"
+        android:textColorHint="@color/bgContent"
+
+        />
+
+
+    <CheckBox
+        android:id="@+id/chkSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_senha"
+        android:layout_below="@+id/et_senha"
+        android:layout_marginTop="13dp"
+        android:text="Salvar preferência"
+        android:textColor="@color/bgContent"
+        android:layout_marginLeft="20dp"
+        android:hint="@color/bgContent" />
+
+    <Button
+        android:id="@+id/btn_entrar"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/chkSalvar"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="13dp"
+        android:text="Entrar" />
+
+
+</RelativeLayout>
+
+

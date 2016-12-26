@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgContent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView
+       android:src="@drawable/person4"
+        android:id="@+id/imageView2"
+        android:layout_width="137dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="187dp"
+        android:layout_weight="0.99"
+   >
+        <me.grantland.widget.AutofitLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            >
+        <me.grantland.widget.AutofitTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_colab_departamento"
+            android:textStyle="normal|bold"
+            android:singleLine="true"
+            android:maxLines="2"
+            android:textSize="40sp"
+            autofit:minTextSize="16sp"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="true" />
+        </me.grantland.widget.AutofitLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_nome_colab"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/textView35"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:text="Cargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView51"
+            android:layout_below="@+id/tv_nome_colab"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/bgTitleLeft" />
+
+        <TextView
+            android:text="Departamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/t3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/bgTitleLeft" />
+        <me.grantland.widget.AutofitLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/t3"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView51"
+
+            >             <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cargo_colab"
+            android:singleLine="true"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="4dp"
+            android:textAllCaps="true" /></me.grantland.widget.AutofitLayout>
+
+
+        <TextView
+            android:text="UserID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView35"
+            android:layout_marginTop="19dp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/bgTitleLeft"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+</LinearLayout>

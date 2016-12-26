@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margem_formulario_esqueda">10dp</dimen>
+    <dimen name="margem_formulario_direita">10dp</dimen>
+    <dimen name="margem_formulario_topo">20dp</dimen>
+    <dimen name="margem_formulario_bottom">80dp</dimen>
+</resources>

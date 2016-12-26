@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name" translatable="false">Controle de Frequência</string>
+    <!--<string name="order_id_mock" translatable="false">1</string>-->
+    <!--<string name="price_mock" translatable="false">$25</string>-->
+    <!--<string name="requests_count_mock" translatable="false">5</string>-->
+    <!--<string name="requests_count_badge" translatable="false">REQUESTS</string>-->
+    <!--<string name="weight_mock" translatable="false">50 oz</string>-->
+    <!--<string name="weight_badge" translatable="false">WEIGHT</string>-->
+    <!--<string name="pledge_mock" translatable="false">$150</string>-->
+    <!--<string name="pledge_badge" translatable="false">PLEDGE</string>-->
+    <!--<string name="sender_badge" translatable="false">SENDER</string>-->
+    <!--<string name="client_name_mock" translatable="false">Edward Norton</string>-->
+    <!--<string name="rating_mock" translatable="false">(26)</string>-->
+    <!--<string name="from_badge" translatable="false">Entrada</string>-->
+    <!--<string name="to_badge" translatable="false">Saída</string>-->
+    <!--<string name="delivery_date_badge" translatable="false">DELIVERY DATE</string>-->
+    <!--<string name="delivery_time_mock" translatable="false">6:30 pm</string>-->
+    <!--<string name="delivery_date_mock" translatable="false">May 16, 2016</string>-->
+    <!--<string name="deadline_badge" translatable="false">REQUEST DEADLINE</string>-->
+    <!--<string name="deadline_time_mock" translatable="false">24 minutes</string>-->
+    <string name="texto_observacoes" translatable="false">Observações</string>
+    <string name="texto_observacao_value" translatable="false">-> As atividades desse dia excederam até o dia seguinte! \n
+-> Existe(m) apontamento(s) desse dia aguardando aprovação do Gerente do Projeto indicado. </string>
+
+    <string name="texto_entrada">Entrada</string>
+    <string name="texto_saida">Saída</string>
+
+
+    <!-- Periodos -->
+    <string name="texto_primeiro_periodo">1º Período</string>
+    <string name="texto_segundo_periodo">2º Período</string>
+    <string name="texto_terceiro_periodo">3º Período</string>
+    <string name="texto_quarto_periodo">4º Período</string>
+    <string name="texto_quinto_periodo">5º Período</string>
+
+    <string name="texto_value_entrada_default"></string>
+    <string name="texto_value_saida_default"></string>
+
+    <string name="texto_left_total">Total</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

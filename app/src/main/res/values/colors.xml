@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#000474</color>
+    <color name="colorPrimary">#594691</color>
+    <color name="colorPrimaryDark">#3e2d70</color>
+    <color name="bgBackSideColor">#f4f0ff</color>
+    <color name="bgTitleLeft">#0462ba</color>
+    <color name="progress_bar_99">#04349c</color>
+    <color name="progress_bar_99_start">#fb1d5b94</color>
+    <color name="bgTitleLeftGradient">#bb286aa7</color>
+    <color name="bgTitleRight">#ffffff</color>
+    <color name="bgContentTop">#0462ba</color>
+    <color name="bgContent">#ffffff</color>
+    <color name="bgContentTrasnparente">#00ffffff</color>
+    <color name="contentDividerLine">#e0e0e0</color>
+    <color name="contentBadgeTitle">#a9a9a9</color>
+    <color name="titleBadgeTitle">#adafb1</color>
+    <color name="titleBadgeText">#026dd9</color>
+    <color name="mainTextColor">#343d43</color>
+    <color name="btnRequest">#ffffff</color>
+    <color name="red">#ec0505</color>
+    <color name="periodo_azul">#026dd9</color>
+    <color name="azulroxo">#130a15</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="ColorPrimary2">#ffffff</color>
+    <color name="ColorPrimaryDark2">#ffffff</color>
+
+</resources>
