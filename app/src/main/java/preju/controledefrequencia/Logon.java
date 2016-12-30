@@ -210,16 +210,13 @@ public class Logon extends Activity {
                             }
                             cont = cont + 1;
                         }
-
                         params.putInt("Cont", cont);
                         intent.putExtras(params);
                         fechaDialogProgress();
                         startActivity(intent);
                         overridePendingTransition(R.anim.res_anim_fadein, R.anim.res_anim_fadeout);
 
-
                     }
-
                 } else {
                     Log.e("Erro", "Ocorreu um erro ao receber o  response");
                 }
@@ -230,8 +227,6 @@ public class Logon extends Activity {
                 Log.e("Erro", "Não conseguiu fazer o request");
             }
         });
-
-
     }
 
     void showDialog(String titulo, String msg) {
@@ -240,7 +235,6 @@ public class Logon extends Activity {
         dialogo.setMessage(msg);
         dialogo.setNeutralButton("OK", null);
         dialogo.show();
-
     }
 
     public void exibeDialogProgress() {

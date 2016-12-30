@@ -45,7 +45,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 
-public class Quinzena extends AppCompatActivity {
+public class Quinzena extends AppCompatActivity{
     private android.app.ProgressDialog pDialog;
     private Toolbar toolbar;
     boolean hideMenu = true;
@@ -254,7 +254,7 @@ public class Quinzena extends AppCompatActivity {
                 .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
 
-                        //Requisição Post passando UniversalID do documento
+                        //Post passando UniversalID do documento
                         /////////////////////////////////////////////////
                         frequenciaOk(Grava.getFrequenciaId(Quinzena.this));
                         Toast.makeText(getApplicationContext(), "Verificação realizada com sucesso!", Toast.LENGTH_SHORT).show();
@@ -283,16 +283,16 @@ public class Quinzena extends AppCompatActivity {
                                 MediaType mediaType = MediaType.parse("application/json");
                                 RequestBody body = RequestBody.create(mediaType, "{\"Verifica\": \"OK\"}");
                                 Request request = chain.request().newBuilder()
-                                        .addHeader("authorization", "Basic ZGxlaXRlOmxvdHVzbm90ZXM=")
-                                        .addHeader("cache-control", "no-cache")
+                                        .addHeader("cache-control", "no-cache")    //.addHeader("authorization", "Basic ZGxlaXRlOmxvdHVzbm90ZXM=")
                                         .addHeader("Content-Type", "application/json")
                                         .addHeader("x-http-method-override", "PATCH")
                                         .post(body)
                                         .build();
-
                                 return chain.proceed(request);
                             }
-                        }).build();
+                        })
+                        .addInterceptor(new BasicAuthInterceptor(Grava.getUser(Quinzena.this), Grava.getSenha(Quinzena.this)))
+                        .build();
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(JsonService.API_BASE_POST_OK)
@@ -336,4 +336,5 @@ public class Quinzena extends AppCompatActivity {
         if (pDialog != null)
             pDialog.dismiss();
     }
+
 }

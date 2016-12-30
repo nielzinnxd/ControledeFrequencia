@@ -15,6 +15,7 @@ public class BasicAuthInterceptor implements Interceptor {
 
     public BasicAuthInterceptor(String user, String password) {
         this.credentials = Credentials.basic(user, password);
+
     }
 
     @Override
